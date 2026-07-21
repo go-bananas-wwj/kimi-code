@@ -2,4 +2,4 @@
 "@moonshot-ai/kimi-code": patch
 ---
 
-Fix interrupting a model request silently triggering retries instead of stopping.
+Fix cancelled model requests being wrapped as retryable provider errors, so interrupting a request no longer triggers silent retries.

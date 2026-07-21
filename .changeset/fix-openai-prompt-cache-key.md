@@ -2,4 +2,4 @@
 "@moonshot-ai/kimi-code": patch
 ---
 
-Fix OpenAI and OpenAI Responses providers not reusing the prompt cache across turns.
+Send the session prompt cache key to OpenAI and OpenAI Responses providers, restoring provider-side prompt cache affinity that previously only reached Kimi and Anthropic.
