@@ -1,5 +1,15 @@
 # @moonshot-ai/kimi-code-sdk
 
+## 0.14.0
+
+### Minor Changes
+
+- [#1735](https://github.com/MoonshotAI/kimi-code/pull/1735) [`ce0e3ce`](https://github.com/MoonshotAI/kimi-code/commit/ce0e3ceb04223bdaad8e8931bad46eff561055b6) Thanks [@7Sageer](https://github.com/7Sageer)! - Add global tool gating to constrain which tools agents may use, with a per-session override (v2 engine only).
+
+### Patch Changes
+
+- [#1976](https://github.com/MoonshotAI/kimi-code/pull/1976) [`e458323`](https://github.com/MoonshotAI/kimi-code/commit/e45832398d0d9cad98dbad1cbf1e5b103a20aace) Thanks [@liruifengv](https://github.com/liruifengv)! - Improve TUI performance and resume speed for long-running sessions.
+
 ## 0.13.4
 
 ### Patch Changes
