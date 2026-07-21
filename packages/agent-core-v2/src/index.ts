@@ -83,6 +83,8 @@ export * from '#/session/sessionMetadata/sessionMetadata';
 export * from '#/session/sessionMetadata/sessionMetadataService';
 export * from '#/session/sessionLease/sessionLease';
 export * from '#/session/sessionLease/sessionLeaseContactProvider';
+export * from '#/session/sessionToolPolicy/sessionToolPolicy';
+export * from '#/session/sessionToolPolicy/sessionToolPolicyService';
 export * from '#/app/config/config';
 export * from '#/app/config/configService';
 import '#/kosong/provider/configSection';
@@ -133,6 +135,16 @@ export {
   getAgentProfileContributions,
   _clearAgentProfileContributionsForTests,
 } from '#/app/agentProfileCatalog/contribution';
+export * from '#/app/agentFileCatalog/types';
+export * from '#/app/agentFileCatalog/paths';
+export * from '#/app/agentFileCatalog/agentRoots';
+export * from '#/app/agentFileCatalog/agentFile';
+export * from '#/app/agentFileCatalog/agentFileDiscovery';
+export * from '#/app/agentFileCatalog/agentProfileFromFile';
+export * from '#/app/agentFileCatalog/configSection';
+export * from '#/app/agentFileCatalog/agentProfileSource';
+export * from '#/app/agentFileCatalog/agentCatalogRuntimeOptions';
+export * from '#/app/agentFileCatalog/userFileAgentSource';
 export * from '#/app/plugin/types';
 export * from '#/app/plugin/commands';
 export * from '#/app/plugin/manifest';
@@ -168,6 +180,11 @@ export * from '#/session/sessionSkillCatalog/extraFileSkillSource';
 export * from '#/session/sessionSkillCatalog/explicitFileSkillSource';
 export * from '#/session/sessionSkillCatalog/workspaceFileSkillSource';
 export * from '#/session/sessionSkillCatalog/pluginSkillSource';
+export * from '#/session/sessionAgentProfileCatalog/sessionAgentProfileCatalog';
+export * from '#/session/sessionAgentProfileCatalog/sessionAgentProfileCatalogService';
+export * from '#/session/sessionAgentProfileCatalog/projectFileAgentSource';
+export * from '#/session/sessionAgentProfileCatalog/extraFileAgentSource';
+export * from '#/session/sessionAgentProfileCatalog/explicitFileAgentSource';
 export * from '#/agent/permissionGate/permissionGate';
 export * from '#/agent/permissionGate/permissionGateService';
 export * from '#/agent/fileFencing/fileFencing';
@@ -214,6 +231,11 @@ export * from '#/agent/toolSelect/toolSelect';
 export * from '#/agent/toolSelect/toolSelectService';
 export * from '#/agent/toolSelect/toolSelectAnnouncements';
 export * from '#/agent/toolSelect/toolSelectAnnouncementsService';
+import '#/agent/toolPolicy/configSection';
+export * from '#/agent/toolPolicy/configSection';
+export * from '#/agent/toolPolicy/evaluate';
+export * from '#/agent/toolPolicy/toolPolicy';
+export * from '#/agent/toolPolicy/toolPolicyService';
 
 import '#/agent/task/configSection';
 export {
