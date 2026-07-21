@@ -168,6 +168,14 @@ describe('AgentTaskService', () => {
     await svc.stop(id);
   });
 
+  it('registerTask rejects new work after close begins', () => {
+    const svc = ix.get(IAgentTaskService);
+
+    svc.beginClose();
+
+    expect(() => svc.registerTask(fakeProcessTask())).toThrow('Agent task service is closing.');
+  });
+
   function stubTaskConfig(value: unknown): void {
     ix.stub(IConfigService, {
       get: ((domain: string) => (domain === 'task' ? value : undefined)) as IConfigService['get'],
